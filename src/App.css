@@ -1,6 +1,7 @@
-html, body {
+html,
+body {
     height: 100%;
-    margin: 0
+    margin: 0;
 }
 
 .container {
@@ -18,4 +19,8 @@ html, body {
 .player {
     height: 100%;
     width: 100%;
+}
+
+.player:hover {
+    opacity: 1;
 }
