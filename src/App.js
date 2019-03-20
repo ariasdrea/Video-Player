@@ -1,26 +1,42 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import ReactPlayer from "react-player";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <section className="container">
+        <div className="player-div">
+          <ReactPlayer
+            className="player"
+            url="https://www.youtube.com/watch?v=VFfKPZhY16Q"
+            controls
+            width="50%"
+            height="50%"
+          />
+          <ReactPlayer
+            className="player"
+            url="https://www.youtube.com/watch?v=ZTGIzeye-xw"
+            controls
+            width="50%"
+            height="50%"
+          />
+          <ReactPlayer
+            className="player"
+            url="https://www.youtube.com/watch?v=30jrmzzgHLc"
+            controls
+            width="50%"
+            height="50%"
+          />
+          <ReactPlayer
+            className="player"
+            url="https://www.youtube.com/watch?v=3k-pMMW01yw"
+            controls
+            width="50%"
+            height="50%"
+          />
+        </div>
+      </section>
     );
   }
 }
