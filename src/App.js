@@ -116,8 +116,3 @@ class App extends Component {
 }
 
 export default App;
-
-// <span className="info-gold">
-//   <img className="tooltip-pic" src="deer.png" alt="thumbnail" />
-//   <p>Chorus Starts</p>
-// </span>
