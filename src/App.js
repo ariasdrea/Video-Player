@@ -29,7 +29,7 @@ class App extends Component {
 
   render() {
     return (
-      <section className="container">
+      <div className="container">
         <div className="player-div">
           {this.state.videos.map(each => {
             return (
@@ -44,6 +44,7 @@ class App extends Component {
             );
           })}
 
+          {/* Tooltips and Info */}
           <div className="tooltip-metatron">
             <span className="info-metatron">
               <img className="tooltip-pic" src="metatron.png" alt="thumbnail" />
@@ -72,7 +73,7 @@ class App extends Component {
             </span>
           </div>
         </div>
-      </section>
+      </div>
     );
   }
 }

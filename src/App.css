@@ -22,10 +22,6 @@ body {
     width: 100%;
 }
 
-.player:hover {
-    opacity: 1;
-}
-
 /*Metatron Video Tooltip */
 .tooltip-metatron {
     position: relative;
