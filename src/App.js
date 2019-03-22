@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
-import Tooltip from "@material-ui/core/Tooltip";
 import "./App.css";
 
 class App extends Component {
@@ -83,25 +82,33 @@ class App extends Component {
             );
           })}
 
-          <div className="tooltip">
-            <span className="tooltip-info">
-              <img className="tooltip-pic" src="pic.png" alt="pic" />
+          <div className="tooltip-metatron">
+            <span className="info-metatron">
+              <img className="tooltip-pic" src="metatron.png" alt="thumbnail" />
               <p>Music Starts</p>
             </span>
           </div>
 
-          <Tooltip title="Music starts" placement="top">
-            <div className="overlay" />
-          </Tooltip>
-          <Tooltip title="Molecule Man" placement="top">
-            <div className="overlay2" />
-          </Tooltip>
-          <Tooltip title="Awesome chorus starts!" placement="top">
-            <div className="overlay3" />
-          </Tooltip>
-          <Tooltip title="?" placement="top">
-            <div className="overlay4" />
-          </Tooltip>
+          <div className="tooltip-people">
+            <span className="info-people">
+              <img className="tooltip-pic" src="molecule.png" alt="thumbnail" />
+              <p>Molecule Man</p>
+            </span>
+          </div>
+
+          <div className="tooltip-drive">
+            <span className="info-drive">
+              <img className="tooltip-pic" src="drive.png" alt="thumbnail" />
+              <p>Chorus Starts</p>
+            </span>
+          </div>
+
+          <div className="tooltip-gold">
+            <span className="info-gold">
+              <img className="tooltip-pic" src="deer.png" alt="thumbnail" />
+              <p>Deer Cameo</p>
+            </span>
+          </div>
         </div>
       </section>
     );
@@ -109,3 +116,8 @@ class App extends Component {
 }
 
 export default App;
+
+// <span className="info-gold">
+//   <img className="tooltip-pic" src="deer.png" alt="thumbnail" />
+//   <p>Chorus Starts</p>
+// </span>

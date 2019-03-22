@@ -26,8 +26,8 @@ body {
     opacity: 1;
 }
 
-/*  */
-.tooltip {
+/*Metatron Video Tooltip */
+.tooltip-metatron {
     position: relative;
     left: 4%;
     bottom: 54.5%;
@@ -36,7 +36,38 @@ body {
     background: red;
 }
 
-.tooltip-info {
+/* People Video Tooltip */
+.tooltip-people {
+    position: relative;
+    left: 53.5%;
+    bottom: 54.5%;
+    width: 5px;
+    height: 3px;
+    background: red;
+}
+
+/*Drive Video Tooltip */
+.tooltip-drive {
+    position: relative;
+    left: 14.5%;
+    bottom: 4.3%;
+    width: 5px;
+    height: 3px;
+    background: red;
+}
+
+/*Gold Video Tooltip */
+.tooltip-gold {
+    position: relative;
+    left: 87%;
+    bottom: 4.3%;
+    width: 5px;
+    height: 3px;
+    background: red;
+}
+
+/* Info div for all videos */
+.info-metatron, .info-people, .info-drive, .info-gold {
     visibility: hidden;
     position: absolute;
     width: 120px;
@@ -53,6 +84,7 @@ body {
     font-size: 12px;
 }
 
+/* Image in Tooltip Div */
 .tooltip-pic {
     visibility: hidden;
     height: 60%;
@@ -60,57 +92,14 @@ body {
     border: 1px solid black;
 }
 
-.tooltip:hover .tooltip-info, .tooltip:hover .tooltip-pic {
+/* Tooltip Description and Image appears on hover */
+.tooltip-metatron:hover .info-metatron, .tooltip-metatron:hover .tooltip-pic, .tooltip-people:hover .info-people, .tooltip-people:hover .tooltip-pic,
+.tooltip-drive:hover .info-drive, .tooltip-drive:hover .tooltip-pic,
+.tooltip-gold:hover .info-gold,
+.tooltip-gold:hover .tooltip-pic {
     visibility: visible;
 }
 
-/* .tooltip:hover .tooltip-pic {
-    visibility: visible;
-} */
-/*  */
-/* .overlay {
-    position: relative;
-    left: 4%;
-    bottom: 54.5%;
-    color: red;
-    width: 5px;
-    height: 3px;
-    background: red;
-} */
-.overlay2 {
-    position: relative;
-    left: 53.5%;
-    bottom: 54.5%;
-    color: red;
-    width: 5px;
-    height: 3px;
-    background: red;
-}
-
-.overlay3 {
-    position: relative;
-    left: 14.5%;
-    bottom: 4.3%;
-    color: red;
-    width: 5px;
-    height: 3px;
-    background: red;
-}
-
-.overlay4 {
-    position: relative;
-    left: 63.5%;
-    bottom: 4.3%;
-    color: red;
-    width: 5px;
-    height: 3px;
-    background: red;
-}
-
-.overlay:hover,
-.overlay2:hover,
-.overlay3:hover,
-.overlay4:hover,
-.tooltip:hover {
+.tooltip-metatron:hover, .tooltip-people:hover, .tooltip-drive:hover, .tooltip-gold:hover {
     cursor: pointer;
 }
