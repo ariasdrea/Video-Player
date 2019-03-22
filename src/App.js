@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
+import Tooltip from "@material-ui/core/Tooltip";
 import "./App.css";
 
 class App extends Component {
@@ -30,9 +31,9 @@ class App extends Component {
         },
         {
           id: 3,
-          title: "Midlake",
+          title: "Gold",
           duration: 0,
-          url: "https://www.youtube.com/watch?v=3k-pMMW01yw"
+          url: "https://www.youtube.com/watch?v=hi4pzKvuEQM"
         }
       ]
     };
@@ -81,6 +82,26 @@ class App extends Component {
               />
             );
           })}
+
+          <div className="tooltip">
+            <span className="tooltip-info">
+              <img className="tooltip-pic" src="pic.png" alt="pic" />
+              <p>Music Starts</p>
+            </span>
+          </div>
+
+          <Tooltip title="Music starts" placement="top">
+            <div className="overlay" />
+          </Tooltip>
+          <Tooltip title="Molecule Man" placement="top">
+            <div className="overlay2" />
+          </Tooltip>
+          <Tooltip title="Awesome chorus starts!" placement="top">
+            <div className="overlay3" />
+          </Tooltip>
+          <Tooltip title="?" placement="top">
+            <div className="overlay4" />
+          </Tooltip>
         </div>
       </section>
     );

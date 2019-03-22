@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -23,4 +24,93 @@ body {
 
 .player:hover {
     opacity: 1;
+}
+
+/*  */
+.tooltip {
+    position: relative;
+    left: 4%;
+    bottom: 54.5%;
+    width: 5px;
+    height: 3px;
+    background: red;
+}
+
+.tooltip-info {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    bottom: 20px;
+    left: 50%;
+    padding: 15px;
+    /*centers modal based on width */
+    margin-left: -75px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    border-radius: 10%;
+    font-size: 12px;
+}
+
+.tooltip-pic {
+    visibility: hidden;
+    height: 60%;
+    width: 60%;
+    border: 1px solid black;
+}
+
+.tooltip:hover .tooltip-info, .tooltip:hover .tooltip-pic {
+    visibility: visible;
+}
+
+/* .tooltip:hover .tooltip-pic {
+    visibility: visible;
+} */
+/*  */
+/* .overlay {
+    position: relative;
+    left: 4%;
+    bottom: 54.5%;
+    color: red;
+    width: 5px;
+    height: 3px;
+    background: red;
+} */
+.overlay2 {
+    position: relative;
+    left: 53.5%;
+    bottom: 54.5%;
+    color: red;
+    width: 5px;
+    height: 3px;
+    background: red;
+}
+
+.overlay3 {
+    position: relative;
+    left: 14.5%;
+    bottom: 4.3%;
+    color: red;
+    width: 5px;
+    height: 3px;
+    background: red;
+}
+
+.overlay4 {
+    position: relative;
+    left: 63.5%;
+    bottom: 4.3%;
+    color: red;
+    width: 5px;
+    height: 3px;
+    background: red;
+}
+
+.overlay:hover,
+.overlay2:hover,
+.overlay3:hover,
+.overlay4:hover,
+.tooltip:hover {
+    cursor: pointer;
 }
